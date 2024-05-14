@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  background-color: #999;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 1.5fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  background-color: #fff;
+  height: 750px;
+  width: 400px;
+  border-top: solid 6px;
+  padding: 3px;
+}
+
+.grid-item {
+  background-color: #fff;
+  padding: 0 10px;
+  border-radius: 2px;
+  border: solid 1px #333;
+}
+
+#numbers {
+ display: grid;
+ grid-template-columns: repeat(5, 1fr);
+ grid-template-rows: repeat(2, 1fr);
+ grid-gap: 5px; 
+ height: 40px; 
+ width: 80%; 
+ font-size: 16px; 
+ padding: 5px; 
+ border: none; 
+ margin: 5px; 
+ margin-bottom: 20px;
+}
+
+#numbers > * {
+ display: flex; 
+ justify-content: center; 
+ align-items: center;
+ padding: 2px; /* Padding inside each grid item */
+ border: none; /* Removes border */
+ border-radius: 5px; 
+ background-color: #e0e0e0; 
+}
+
+.input {
+  width: 80px;
+  margin-right: 20px;
+}
+
+#keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#keyboard button {
+    flex: 1 0 calc(25% - 10px); /* Adjust the percentage and margin as needed */
+    margin: 5px;
+    font-size: 18px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+#keyboard button:hover {
+    background-color: #e0e0e0;
+}
+
+.keyboard button:hover {
+  background-color: #e0e0e0;
+}
+
+.btn-submit {
+    width: 80px;
+    font-size: 14px;
+    padding: 5px 10px;
+    background-color: aquamarine;
+    border: none;
+    border-radius: 5px;
+}

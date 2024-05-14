@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mean Calculator</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="{{ url_for('static', filename='css/style.css') }}"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Your HTML content goes here -->
+    <div class="container">
+      <div class="grid-item">
+        <div class="question">
+          <h3>Quiz</h3>
+          <p>
+            Please what is the MEAN of the following numbers to two decimal
+            points?
+          </p>
+          <div id="numbers"></div>
+          <form id="answerForm">
+            <label for="answer">Please enter your answer:</label>
+            <input class="input" type="text" id="answer" name="answer" />
+            <button type="submit" class="btn-submit">Submit</button>
+          </form>
+          <div id="displayAnswer"></div>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <h4>Step 1</h4>
+        <hr />
+        <p>Find the sum of all the numbers in the dataset.</p>
+        <form id="step1">
+          <label for="step1">Please enter your answer:</label>
+          <input class="input" type="text" id="answer" name="answer" />
+          <button type="submit" class="btn-submit">Submit</button>
+        </form>
+        <div id="displayStep1"></div>
+      </div>
+
+      <div class="grid-item">
+        <h4>Step 2</h4>
+        <hr />
+        <p>Find the size of the dataset.</p>
+        <form id="step2">
+          <label for="step2">Please enter your answer:</label>
+          <input class="input" type="text" id="answer" name="answer" />
+          <button type="submit" class="btn-submit">Submit</button>
+        </form>
+        <div id="displayStep2"></div>
+      </div>
+
+      <div class="grid-item">
+        <h4>Step 3</h4>
+        <hr />
+        <p>Divide the total sum by the size.</p>
+        <form id="step3">
+          <label for="step3">Please enter your answer:</label>
+          <input class="input" type="text" id="answer" name="answer" />
+          <button type="submit" class="btn-submit">Submit</button>
+        </form>
+        <div id="displayStep3"></div>
+      </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>
