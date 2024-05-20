@@ -13,20 +13,6 @@ def mean_calculator():
     size = len(set_num)
     return jsonify({'numbers': set_num, 'total': total_sum, 'mean': mean, 'size': size})
 
-
-@app.route('/submit_answer', methods=['POST'])
-def submit_answer():
-    #Retrieve sessions from mean_calculator
-    sum_total = session.get('sum')
-    mean = session.get('mean', None)
-    size = session.get('size')
-
-    #Get form inputs
-    step1 = request.form.get('step1')
-    step2 = request.form.get('step2')
-    step3 = request.form.get('step3')
-    return jsonify({'message': 'Answer submitted successfully', 'answer': answer})
-
 @app.route('/')
 def home():
     return render_template('index.html')
